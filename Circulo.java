@@ -1,6 +1,9 @@
+import java.util.Scanner;
 public class Circulo extends Shape {
+    Scanner leer = new Scanner(System.in);
     public void calcularArea(){
-        double radio = 2;
+        System.out.println("Ingrese el radio");
+        double radio = leer.nextDouble();
         radio = radio*radio;
         double area;
         double pi = 3.1416;
@@ -9,10 +12,10 @@ public class Circulo extends Shape {
     }
 
     public void calcularPerimetro(){
-        double diametro = 3;
+        System.out.println("Ingrese el perimetro");
+        double diametro = leer.nextDouble();
         double pi = 3.1416;
-        double perimetro;
-        perimetro = pi * diametro;
+        double perimetro = pi * diametro;
         System.out.println(perimetro);
 
     }

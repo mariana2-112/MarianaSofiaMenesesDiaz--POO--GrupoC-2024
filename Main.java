@@ -31,13 +31,15 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("CUADRADO");
+                    System.out.println("Ingrese el lado");
+                    int lado = leer.nextInt();
                     System.out.println("Area");
                     cuadrado1.calcularArea();
                     System.out.println("Perimetro");
                     cuadrado1.calcularPerimetro();
                     break;
                 case 4:
-                    System.out.println("Finalizando programa...");
+                    System.out.println("Finalizando programa");
                     return;
                 default:
                     System.out.println("Ingrese una opcion valida");
